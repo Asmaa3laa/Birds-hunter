@@ -12,7 +12,7 @@ $(function () {
 
 });
 
-//main function to start game "Hadeer"
+//main function to start game 
 $(function () {
     $("#start").on("click", function () {
         $("body").css({cursor: "url() 16 16,crosshair"})
@@ -98,7 +98,7 @@ normCounter = 0;
 goldCounter = 0;
 blackCounter = 0;
 var birdsArr=[];
-// create birds Hadeer
+// create birds 
 function createBirds() {
     random();
     for (let i = 0; i < normal; i++) {
@@ -129,7 +129,7 @@ function createBirds() {
         $(".blackclass").css({top:tvalue-100});
     }
 }
-//birds movement Hadeer
+//birds movement 
 function movement() {
     random();
     $(".normalclass").animate({
@@ -148,7 +148,7 @@ function movement() {
     }, 7000);
 
 }
-// shot birds Asmaa
+//shooting birds
 function killNormalBird() {
     gunSound.play();
     score = score + 5;
@@ -185,7 +185,7 @@ function killBlackBird() {
     counter++;
     winner();
 }
-//shot bumps and kill surrounding birds Asmaa
+//shoot bumps and kill surrounding birds 
 function shotBumps(){
     bumpSound.play();
     let bump = event.target;
@@ -226,7 +226,6 @@ function shotBumps(){
 
 }
 
-// Hadeer
 function winner() {
 
     //saving playername with his score

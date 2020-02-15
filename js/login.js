@@ -1,4 +1,3 @@
-//Asmaa
 window.addEventListener('load',function(){
     aboutDiv = document.querySelector(".aboutDiv"); 
     textArea = document.getElementById("txtarea");
